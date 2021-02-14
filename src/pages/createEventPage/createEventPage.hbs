@@ -1,0 +1,61 @@
+<main>
+  <div class="wrap">
+    <form class="createEventForm" id="createEventForm">
+      <div class="row align-items-center">
+        <div class="col-3">
+          <label for="nameOfEvent" class="col-form-label">Name of event:</label>
+        </div>
+        <div class="col-5">
+          <input type="text" id="nameOfEvent" name="nameOfEvent" class="form-control" required />
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-3">
+          <label for="participants" class="col-form-label">Participants:</label>
+        </div>
+        <div class="col-5">
+          <select class="form-select" size="3" multiple id="participants" name="participants" required>
+            {{#each participants}}
+            <option value={{name}}>{{name}}</option>
+            {{/each}}
+          </select>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-3">
+          <label for="day" class="col-form-label">Day:</label>
+        </div>
+        <div class="col-5">
+          <select class="form-select" id="day" name="day">
+            <option value="0">Monday</option>
+            <option value="1">Tuesday</option>
+            <option value="2">Wednesday</option>
+            <option value="3">Thursday</option>
+            <option value="4">Friday</option>
+          </select>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-3">
+          <label for="time" class="col-form-label">Time:</label>
+        </div>
+        <div class="col-5">
+          <select class="form-select" id="time" name="time">
+            {{#each schedule}}
+            <option value={{time}}>{{time}}:00</option>
+            {{/each}}
+          </select>
+        </div>
+      </div>
+      <div id="alert"></div>
+      <div class="row align-items-center">
+        <div class="col-2">
+          <a type="button" class="btn btn-danger" href="/testCiclum">Cancel</a>
+        </div>
+        <div class="col-2">
+          <button type="submit" class="btn btn-primary createEventButton">Create</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</main>

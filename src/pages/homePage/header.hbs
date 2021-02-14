@@ -1,0 +1,21 @@
+<div class="wrap">
+  <div class="row justify-content-between">
+    <div class="col">
+      <h1>Calendar</h1>
+    </div>
+    <div class="col">
+      <div class="row justify-content-between">
+        <div class="col">
+          <select class="form-select participants">
+            {{#each this}}
+            <option value={{name}}>{{name}}</option>
+            {{/each}}
+          </select>
+        </div>
+        <div class="col">
+          <button class="btn btn-primary createEvent">New event +</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

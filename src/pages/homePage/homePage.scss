@@ -1,0 +1,28 @@
+.head {
+  margin: 14px 0;
+}
+
+.table-calendar {
+  &__event {
+    position: relative;
+    background-color: lightgreen !important;
+
+    span {
+      padding: 0;
+      font-size: 14px;
+    }
+  }
+
+  &__deleteBtn {
+    position: absolute;
+    border: none;
+    background-color: inherit;
+    height: 10px;
+    padding: 0;
+    top: 0;
+    right: 6px;
+  }
+  &__deleteBtn:hover {
+    color: red;
+  }
+}
