@@ -4,6 +4,7 @@ https://anton-ua.github.io/testCiclum/
 
 ### About
 
-⋅⋅*add new event 
-⋅⋅*filter event by participiant 
-⋅⋅*delete event
+You can:
+  * add new event
+  * filter event by participiant
+  * delete event
